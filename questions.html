@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/Main-styles.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/Main-styles2.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Peddana&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>Preguntas</title>
+</head>
+<body class="body-concepts">
+    <div class="logo">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="profile.html">Perfil</a></li>
+                <li><a href="soup.html">Sopa</a></li>
+                <li><a href="concepts.html">Conceptos</a></li>
+                <li><a href="questions.html">Preguntas</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container-form">
+        <form method="POST">
+            <div class="container-question">
+                <h4 class="concept-tittle">¿Qué es html?</h4>
+                <input type="radio" name="preg1" value="1">Un paradígma de progración<br>
+                <input type="radio" name="preg1" value="2">Un framework<br>
+                <input type="radio" name="preg1" value="3">Un lenguaje de etiquetas<br>
+            </div>
+            <div class="container-question">
+                <h4 class="concept-tittle">¿Qué es CSS?</h4>
+                <input type="radio" name="preg2" value="1">Un lenguaje de estilos para html<br>
+                <input type="radio" name="preg2" value="2">Un lenguaje para programar backend<br>
+                <input type="radio" name="preg2" value="3">Un protocolo de internet<br>
+            </div>
+            <div class="container-question">
+                <h4 class="concept-tittle">¿Es cierto que javascript es java en la web?</h4>
+                <input type="radio" name="preg3" value="1">Verdadero<br>
+                <input type="radio" name="preg3" value="2">Falso<br>
+            </div>
+            <div class="container-question">
+                <h4 class="concept-tittle">¿React es un framework para desarrollar frontend?</h4>
+                <input type="radio" name="preg4" value="1">Verdadero<br>
+                <input type="radio" name="preg4" value="2">Falso<br>
+            </div>
+            <div class="container-question">
+                <h4 class="concept-tittle">¿Se puede utilizar python para programar backend?</h4>
+                <input type="radio" name="preg5" value="1">Si<br>
+                <input type="radio" name="preg5" value="2">No<br>
+            </div>
+        </form>
+        <button onclick="GetAndResult();" class="btn-form">Enviar </button>
+    
+        <div class="resultados" id="result"></div>
+    </div>
+    <script src="js/questions.js"></script>
+</body>
+</html>
