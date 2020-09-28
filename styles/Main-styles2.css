@@ -33,7 +33,7 @@
     top: 0;
     left: 0;
     z-index: 15;
-    background: url("../texture.png");
+    background: url("../assets/texture.png");
 }
 #hero .caption{
     position: relative;
@@ -84,4 +84,33 @@
     margin-top: 15px;
     width: 100px;
     font-size: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 3vh;
+    background-color: rgba(177, 166, 166, 0.795);
+}
+.logo{
+    color: black;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding-left: 10px;
+}
+.nav-links li{
+    padding-left: 10px;
+}
+.nav-links a{
+    color: rgb(199, 185, 185);
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    
 }
