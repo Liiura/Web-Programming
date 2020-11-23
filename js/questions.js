@@ -6,6 +6,8 @@ function GetAndResult(event){
     var pregunta5=document.getElementsByName("preg5");
     var questions=[pregunta1,pregunta2,pregunta3,pregunta4,pregunta5];
     var message="";
+    var cont=0;
+
     for(i=0; i<questions.length; i++){
         for (j=0; j<questions[i].length; j++){
             if (questions[i][j].checked){
@@ -45,10 +47,17 @@ function GetAndResult(event){
                     }
                 }
                 
+            }else{
+                if(cont===0){
+                    alert("Debes responder todas las preguntas")
+                    cont++;
+                    location.reload();
+                }
             }
         }
     }
     InnerHtmlMessage(message);
+    
 }
 function InnerHtmlMessage(message){
     var result=document.getElementById("result");
